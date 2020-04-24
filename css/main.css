@@ -55,6 +55,10 @@ Remise en place d'un css de base correct et commun a tous les navigateurs
 
 
 /*Réatribution du css par défault à ma façon*/
+html {
+    scroll-behavior: smooth;
+}
+
 h1
 {
 	font-size: 2em;
@@ -85,7 +89,7 @@ p{
 }
 
 ul, ol{
-	padding: 10px 0px 20px 30px;
+	padding: 10px 0px 10px 30px;
 	list-style: inside;
 }
 
@@ -108,6 +112,11 @@ th{
 	font-size: 12px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 strong{
 	font-weight: bold;
 }
@@ -120,7 +129,7 @@ strong{
 
 /*some fonts*/
 @font-face {
-    font-family: montserratRegular;
+    font-family: montserrat;
     src: url(../fonts/montserrat/Montserrat-Regular.ttf);
 }
 
@@ -129,19 +138,82 @@ strong{
     src: url(../fonts/slabo_27px/Slabo27px-Regular.ttf);
 }
 
-body {
-    background: url("../images/portraitRogner.jpg"), no-repeat, #96969677;
+@font-face {
+    font-family: cormorant;
+    src: url(../fonts/cormorantGaramond/CormorantGaramond-Regular.ttf);
+}
+
+/*CSS Globals*/
+h1, p {
+    padding: 5vh 0 0 7vw;
+    font-family: cormorant;
+    color: #EEF0F2;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+/*Page d'accueil*/
+#portrait {
+    background: url(../images/portraitRogner.jpg), no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
 }
 
-#aboutMe {
-    margin-left: 15vw;
-    margin-top: 25vh;
-    
-    color: #cfcfe6;
-    font-family: slabo;
+nav > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    color: #EEF0F2;
 }
 
-#aboutMe > p {
+.nav-child {
+    font-family: cormorant;
+    margin-top: 2vh;
+    margin-right: 3vw;
+    font-size: 1.2em;
+    color: #EEF0F2;
+}
+
+/*.nav-underline{
+    width: 0;
+    border: solid #EEF0F2 1px;
+}*/
+
+#presentation {
+    padding-left: 7vw;
+    padding-top: 20vh;
+    height: 100vh;
+}
+
+#presentation > h1 {
+    font-size: 5em;
+}
+
+#presentation > p {
     width: 25vw;
+}
+
+
+/*Qui suis-je ?*/
+#about {
+    background-color: #274156;
+}
+#workspace {
+    background: url(../images/desktopWork.jpg), no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+/*Mes projets*/
+#projets {
+    height: 100vh;
+    background-color: #ECEBE4;
+    display: flex;
+    flex-direction: row;
 }
