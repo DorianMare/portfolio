@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Dorian Mare</title>
 </head>
@@ -17,7 +18,10 @@
                     <a href="#about">Qui suis-je ?</a>
                 </li>
                 <li class="nav-child">
-                    <a href="#projets">Mes Projets</a>
+                    <a href="#portfolio">Mes Projets</a>
+                </li>
+                <li class="nav-child">
+                    <a href="#contact">Contact</a>
                 </li>
                 <li class="nav-child">
                     <a href="CV.pdf" target="_blank">CV</a>
@@ -29,6 +33,7 @@
             <h1>Dorian Mare</h1>
             <p>
                 Étudiant en DUT Informatique, je souhaite poursuivre dans cette voie dans le domaine de la sécurité informatique.
+                <br />
                 Malgré ce choix, je reste cependant fort intéressé dans tous les autres domaines que ce soit le web ou les applications.
             </p>
         </div>
@@ -38,19 +43,64 @@
     <div id="about">
         <h1>Qui suis-je ?</h1>
         <p>
-            Passionné par l'informatique depuis mon adolescence, je
-
-            Je prévois l'an prochain de poursuivre mes études à Télécom Nancy sur le parcours ingénieur, où j'aurai la possibilité
-            de me spécialisé dans la sécurité informatique
+            Passionné par <strong>l'informatique</strong> depuis mon adolescence, je suis un <strong>jeune étudiant</strong> informaticien en devenir qui recherche
+            à constamment se perfectionner dans ce milieu. <strong>Motivation</strong> et <strong>créativité</strong> sont pour moi les maîtres mots du métier, qui nécessite
+            une constante <strong>évolution</strong>. <br />
+            J'étudie actuellement pour obtenir mon <strong>DUT</strong> au cours de cette année.
+            Je prévois l'an prochain de poursuivre mes études à <strong>Télécom Nancy</strong> sur le parcours ingénieur, où j'aurai la possibilité
+            de me spécialiser dans la <strong>sécurité informatique</strong>.
         </p>
+
+        <div class="lieuEtude">
+            <img id="UL" class="big-img" src="images/universiteLimoges.jpg" alt="Université de Limoges">
+            <img id="ULL" class="little-img" src="images/universiteLimogesLogo.png" alt="Université de Limoges logo">
+        </div>
+        
+        <div class="lieuEtude">
+            <img id="TLN" class="big-img" src="images/telecomNancy2.jpg" alt="Télécom Nancy">
+            <img id="TLNL" class="little-img" src="images/telecomNancyLogo.png" alt="Télécom Nancy logo">
+        </div>
+
     </div>
-    <div id="workspace"></div>
-    
-    
-    <div id="projets">
-        <h1>Mes projets et Passe-Temps</h1>
+    <div id="workspace">
+        <div id="grayBloc">
+            <h1>Un univers de travail qui m'inspire</h1>
+            <p>Mes passions, la musique et le dessin, contribue à ma créativité et m'aide à constamment innover</p>
+        </div>
     </div>
     
+    
+    <div id="portfolio">
+        <h1>Mon portfolio</h1>
+        <div id="projets-grid">
+            <a href="pages/lamaTheGame.html">
+                <div class="projet">
+                    <img class="hvr-grow" src="images/lamaTheGame.PNG" alt="lamaTheGame">
+                    <h2>Jeu sur Android reprenant le principe du Dinosaure de Google !</h2>
+                </div>
+            </a>
+            <a href="pages/siao.html">
+                <div class="projet">
+                    <img class="hvr-grow" src="images/arsl_Image.jpg" alt="siao115">
+                    <h2>Site pour le SIAO</h2>
+                </div>
+            </a>
+        </div>
+
+        <p>Pour pouvoir suivre tous mes projets en temps réels, suivez moi sur <a href="https://github.com/DorianMare" style="text-decoration: underline;">GitHub</a> !</p>
+    </div>
+    
+
+    <div id="contact">
+        <h1 class="contact-element">Contact</h1>
+        <p class="contact-element">Mail : <a href="mailto:dorian.mare@etu.unilim.fr">dorian.mare@etu.unilim.fr</a></p>
+        
+        <p class="contact-element">Mon <a href="https://www.linkedin.com/in/dorian-mare-2643a91a2/">LinkedIn</a></p>
+    </div>
+
+    <footer>
+        <p>© Copyrignt 2020</p>
+    </footer>
 
     <!--JavaScript importation-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>

@@ -1,132 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-   CSS Reset
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*********************************************************************************************************************************************/
-/*
-Remise en place d'un css de base correct et commun a tous les navigateurs
-*/
-
-
-/*Réatribution du css par défault à ma façon*/
-html {
-    scroll-behavior: smooth;
-}
-
-h1
-{
-	font-size: 2em;
-	font-weight: bold; 
-	padding: 30px 0px 30px 0px;
-}
-
-h2{
-	font-size: 1.7em;
-	font-weight: bold;
-	padding: 25px 0px 25px 15px;
-}
-
-h3{
-	font-size: 1.4em;
-	font-weight: bold;
-	padding: 20px 0px 20px 15px
-}
-
-h4{
-	font-size: 1.2em;
-	padding: 10px 0px 15px;
-}
-
-p{
-	font-size: 15px;
-	padding: 0px 0px 8px 0px;
-}
-
-ul, ol{
-	padding: 10px 0px 10px 30px;
-	list-style: inside;
-}
-
-li{
-	padding: 2px 0px 2px 0px;
-	font-size: 15px;
-}
-
-td, tr, th
-{
-	padding: 8px;
-	border-collapse : collapse;
-	border-color : black;
-	border-width : 1px;
-	border-style : solid;
-}
-
-th{
-	font-weight: bold;
-	font-size: 12px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-strong{
-	font-weight: bold;
-}
-
-/*************************************************************************************************************************************/
-
-/*
-    CSS du projet
-*/
-
 /*some fonts*/
 @font-face {
     font-family: montserrat;
@@ -140,12 +11,12 @@ strong{
 
 @font-face {
     font-family: cormorant;
-    src: url(../fonts/cormorantGaramond/CormorantGaramond-Regular.ttf);
+    src: url(../fonts/cormorantGaramond/CormorantGaramond-SemiBold.ttf);
 }
 
 /*CSS Globals*/
-h1, p {
-    padding: 5vh 0 0 7vw;
+h1, h2, p {
+    padding: 5vh 5vw 0 7vw;
     font-family: cormorant;
     color: #EEF0F2;
 }
@@ -201,19 +72,147 @@ nav > ul {
 
 /*Qui suis-je ?*/
 #about {
-    background-color: #274156;
+    height: 100vh;
+    background-color: #EEF0F2;
 }
+#about > h1, #about > p {
+    color: #1C1C1C;
+}
+#about > p {
+    padding-left: 12vw;
+    padding-right: 15vw;
+    font-size: 1.5em;
+}
+
+.big-img {
+    height: 40vh;
+    width: auto;
+}
+
+.little-img {
+    height: 10vh;
+    width: auto;
+}
+
+#UL {
+    position: relative;
+    left: 25vw;
+    top: 10vh;
+}
+#ULL {
+    position: relative;
+    left: -9vw;
+    top: -18vh;
+}
+
+#TLN {
+    position: relative;
+    top: 25vh;
+    left: 20vw;
+}
+#TLNL {
+    position: relative;
+    left: 13vw;
+    top: -8vh;
+}
+
+.lieuEtude {
+    display: inline-block;
+}
+
+/*Lieu de travail*/
 #workspace {
     background: url(../images/desktopWork.jpg), no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 60vh;
+    height: 70vh;
+}
+#grayBloc {
+    margin-left: 10vw;
+    height: 100%;
+    width: 20vw;
+    background-color: #EEF0F2C0;
+}
+#grayBloc > h1 {
+    font-weight: normal;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    color: #1C1C1C;
+}
+#grayBloc > p {
+    padding: 10vh 3.5vw 0 3.5vw;
+    font-size: 1.5em;
+    color: #1C1C1C;
 }
 
 /*Mes projets*/
-#projets {
-    height: 100vh;
-    background-color: #ECEBE4;
+#portfolio {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1C1C1C;
+    padding-bottom: 10vh;
+}
+
+#portfolio > h1 {
+    align-self: flex-start;
+}
+
+#projets-grid {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: auto auto;
+}
+
+.projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.projet > img {
+    height: 40vh;
+    width: auto;
+}
+
+.projet > h2 {
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/*Contact*/
+#contact {
+    background-color: #EEF0F2;
+    padding-bottom: 5vh;
+}
+
+.contact-element {
+    color: #1C1C1C;
+}
+
+.contact-element > a {
+    text-decoration: underline;
+    color: #1C1C1C;
+}
+
+.contact-element > a:hover {
+    color: rgb(104, 104, 104);
+}
+
+/*Pied de page*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5vh;
+    background-color: #1C1C1C;
+}
+
+footer > p {
+    padding: 0;
+    padding-left: 2vw;
 }

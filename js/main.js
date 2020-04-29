@@ -1,17 +1,7 @@
 //animation from start
 var tl_Start = gsap.timeline();
-tl_Start.from("#presentation", {duration: 1.5, opacity: 0, y: -100}).delay(0.5)
-    .from("nav", {duration: 1, opacity: 0, x: -500});
-
-//init the ScrollMagic controller
-var controller = new ScrollMagic.Controller();
-
-//create a tl and a scene
-var tl_WhoAmI = gsap.timeline();
-var scene = new ScrollMagic.Scene({
-    triggerElement: "#about"
-}).setTween(("#about", {duration: 1.5, opacity: 0, y: -100})).addTo(controller);
-
+tl_Start.from("#presentation", {duration: 1, opacity: 0, y: -75}).delay(0.5)
+    .from("nav", {duration: 1.5, opacity: 0, x: -250});
 
 //scroll detection (currently usueless)
 /*var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
