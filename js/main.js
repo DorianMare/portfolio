@@ -1,7 +1,14 @@
-//animation from start
+//animation page d'accueil
 var tl_Start = gsap.timeline();
 tl_Start.from("#presentation", {duration: 1, opacity: 0, y: -75}).delay(0.5)
     .from("nav", {duration: 1.5, opacity: 0, x: -250});
+
+//animation lamaTheGame
+var tl_Lama = gsap.timeline();
+tl_Lama.from("#presentationLama", {duration: 1, opacity: 0, x: -125}).delay(0.5)
+.from("img", {duration: 1.5, opacity: 0, y: -100});
+
+//animation siao
 
 //scroll detection (currently usueless)
 /*var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
