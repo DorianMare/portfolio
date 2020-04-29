@@ -1,5 +1,27 @@
+@font-face {
+    font-family: cormorant;
+    src: url(../fonts/cormorantGaramond/CormorantGaramond-SemiBold.ttf);
+}
+
+/*CSS Globals*/
+h1, h2, p {
+    padding: 5vh 5vw 0 7vw;
+    font-family: cormorant;
+    color: #EEF0F2;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
 body {
     background-image: url("../images/arsl_Image.jpg");
     background-size: cover;
     background-attachment: fixed;
+}
+
+#presentationSIAO {
+    background-color: #1C1C1CCC;
+    height: 100vh;
 }

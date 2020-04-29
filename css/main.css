@@ -213,6 +213,8 @@ footer {
 }
 
 footer > p {
+    display: inline;
     padding: 0;
     padding-left: 2vw;
+    margin-right: 20vw;
 }
