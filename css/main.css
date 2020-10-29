@@ -28,7 +28,7 @@ p {
 
 /*Page d'accueil*/
 #portrait {
-    background: url(../images/portraitRogner.jpg), no-repeat;
+    background: url(../images/portrait2Rogner.jpg), no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
